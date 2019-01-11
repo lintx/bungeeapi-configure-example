@@ -1,0 +1,26 @@
+string1: 'string1'
+string2: 'string2'
+int1: 1
+int2: 2
+double1: 1.0
+enum1: 'A'
+liststr1:
+  - 'str1'
+  - 'str2'
+  - 'str3'
+listint1:
+  - 1
+  - 2
+  - 3
+child1:
+  str1: 'str'
+  int1: 1
+child2:
+  str1: 'str2'
+  int1: 2
+  grandson:
+    double1: 2.0
+map1:
+  str1: val1
+  str2: val2
+  str3: val3

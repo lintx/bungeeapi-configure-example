@@ -1,0 +1,3 @@
+name: ConfigureExample
+version: 1.0
+main: org.lintx.example.BungeeConfiture.Example
