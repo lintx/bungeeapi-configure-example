@@ -2,14 +2,14 @@ package org.lintx.example.BungeeConfiture.config;
 
 
 import org.lintx.plugins.modules.configure.BungeeConfigure;
-import org.lintx.plugins.modules.configure.ConfigureAnnotation;
+import org.lintx.plugins.modules.configure.YamlConfig;
 
-@ConfigureAnnotation.yamlFile(path = "example.yml")
+@YamlConfig(path = "example.yml")
 public class Example extends BungeeConfigure {
 
-    @ConfigureAnnotation.yamlConfig
+    @YamlConfig
     public String string1 = "";
 
-    @ConfigureAnnotation.yamlConfig(path = "child.string1")
+    @YamlConfig(path = "child.string1")
     public String string2 = "";
 }

@@ -2,9 +2,9 @@ package org.lintx.example.BungeeConfiture.config;
 
 
 import org.lintx.plugins.modules.configure.BungeeConfigure;
-import org.lintx.plugins.modules.configure.ConfigureAnnotation;
+import org.lintx.plugins.modules.configure.YamlConfig;
 
 public class Grandson extends BungeeConfigure {
-    @ConfigureAnnotation.yamlConfig
+    @YamlConfig
     public double double1 = 0;
 }

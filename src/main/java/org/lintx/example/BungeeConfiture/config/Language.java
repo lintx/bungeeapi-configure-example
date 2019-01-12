@@ -2,10 +2,10 @@ package org.lintx.example.BungeeConfiture.config;
 
 
 import org.lintx.plugins.modules.configure.BungeeConfigure;
-import org.lintx.plugins.modules.configure.ConfigureAnnotation;
+import org.lintx.plugins.modules.configure.YamlConfig;
 
 public class Language extends BungeeConfigure {
 
-    @ConfigureAnnotation.yamlConfig
+    @YamlConfig
     public String string1 = "";
 }

@@ -1,11 +1,11 @@
 package org.lintx.example.BungeeConfiture.config;
 
 import org.lintx.plugins.modules.configure.BungeeConfigure;
-import org.lintx.plugins.modules.configure.ConfigureAnnotation;
+import org.lintx.plugins.modules.configure.YamlConfig;
 
-@ConfigureAnnotation.yamlFile(path = "config/noyml.yml")
+@YamlConfig(path = "config/noyml.yml")
 public class NoYmlToSaveFile extends BungeeConfigure {
 
-    @ConfigureAnnotation.yamlConfig
+    @YamlConfig
     public String string = "test string";
 }

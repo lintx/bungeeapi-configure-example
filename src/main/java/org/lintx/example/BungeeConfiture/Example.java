@@ -1,10 +1,8 @@
 package org.lintx.example.BungeeConfiture;
 
 import net.md_5.bungee.api.plugin.Plugin;
-import org.lintx.example.BungeeConfiture.config.Default;
-import org.lintx.example.BungeeConfiture.config.DefaultLanguage;
-import org.lintx.example.BungeeConfiture.config.Language;
-import org.lintx.example.BungeeConfiture.config.NoYmlToSaveFile;
+import org.lintx.example.BungeeConfiture.config.*;
+import org.lintx.plugins.modules.configure.Configure;
 
 import java.util.Map;
 
@@ -61,6 +59,11 @@ public class Example extends Plugin {
         NoYmlToSaveFile nofile = new NoYmlToSaveFile();
         nofile.load(this);
         nofile.save();
+
+        NoInherit n = new NoInherit();
+        Configure.bungeeLoad(this,n);
+        log("NoInherit.example",n.example);
+        Configure.bungeeSave(this,n);
     }
 
     private void log(String name,String val){
